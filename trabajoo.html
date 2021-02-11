@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Actividad figuras computación gráfica</title>
+  </head>
+  <body>
+    <script src="https://threejs.org/build/three.js"></script>
+
+    <script>
+      var escena = new THREE.Scene();
+      var camara = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+      var renderer = new THREE.WebGLRenderer();
+      renderer.setSize( window.innerWidth, window.innerHeight );
+      document.body.appendChild( renderer.domElement );        
+      var figura = new THREE.BoxGeometry( 1, 1, 1 );
+   
+      var material = new THREE.MeshNormalMaterial();
+      var cubito3d = new THREE.Mesh( figura, material );
+      escena.add( cubito3d );
+      camara.position.z = 5;
+      camara.position.y = 2;
+      camara.lookAt(escena.position);
+      
+        
+        
+        var render = function () {
+        requestAnimationFrame( render );
+        renderer.render( escena, camara );
+      };
+      render();
+        
+        
+        
+        
+    </script>
+  </body>
+</html>
+

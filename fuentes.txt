@@ -1,0 +1,5 @@
+https://threejs.org/docs/#api/en/geometries/CircleGeometry
+https://threejs.org/docs/#api/en/math/Color   para saber que colores puse en las figuras
+https://medium.com/@necsoft/es-three-js-101-hola-mundo-parte-1-e821592823db
+https://threejs-tutorial-esp.readthedocs.io/es/latest/source/conceptos_basicos.html
+https://www.youtube.com/watch?v=pJaP0GZyUbA&ab_channel=MonkeyWit
